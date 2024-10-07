@@ -1,0 +1,39 @@
+.background{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.typewriter{
+    display:flex;
+    justify-content:center
+}
+
+.typewriter p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin-inline:auto;
+    overflow:hidden;
+    /* Keeps on a single line */
+    white-space: nowrap;
+    /* The cusor */
+    border-right: 1px solid;
+    /* stepss= number of characters */
+    animation: typing 3s steps(22) forwards,
+    blink 1s step-end infinite;
+}
+@keyframes typing{
+    from{
+        width:0;
+    }
+    to{
+        width:100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color:transparent;
+    }
+
+}
